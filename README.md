@@ -5,21 +5,29 @@
 [![license](https://img.shields.io/github/license/sbstjn/typescript-npm-boilerplate.svg)](https://github.com/sbstjn/typescript-npm-boilerplate/blob/master/LICENSE.md)
 [![Coveralls](https://img.shields.io/coveralls/sbstjn/typescript-npm-boilerplate.svg)](https://coveralls.io/github/sbstjn/typescript-npm-boilerplate)
 
-A minimal boilerplate to write NPM modules in TypeScript and have them compiled to JS on a GitHub release and published to NPM using CircleCI and GitHub Releases.
+A minimal boilerplate to write NPM modules in TypeScript. The TS code is compiled to JavaScript and published to NPM using CircleCI and GitHub Releases.
 
 ## Features
 
-- TypeScript with linting
-- Tests with Jest
-- Coverage reports with Coveralls
-- Test, build and publish with CircleCI
-- Release with GitHub Releases
+- [TypeScript](tsconfig.json) with [linting](tslint.json)
+- [Tests with Jest](test)
+- Coverage reports with [Coveralls](https://coveralls.io)
+- Test and build with [CircleCI](circle.yml)
+- Publish with GitHub [Releases](Releases)
 
 ## Usage
 
 Fork this repository, download it, or clone it and add your custom files and configurations.
 
 More to come …
+
+### NPM Tasks
+
+- **test** - Run jest
+- **test:cover** - Run jest and create coverage report
+- **coveralls** - Publish coverage report to Coveralls
+- **lint** - Run tslint
+- **build** - Compile to JavaScript
 
 ## Configuration
 

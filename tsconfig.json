@@ -12,7 +12,8 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "esnext"
+    "target": "esnext",
+    "declaration": true
   },
   "include": [
     "src/**/*",

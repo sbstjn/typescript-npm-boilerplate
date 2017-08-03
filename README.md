@@ -23,11 +23,11 @@ More to come …
 
 ### NPM Tasks
 
-- **test** - Run jest
-- **test:cover** - Run jest and create coverage report
-- **coveralls** - Publish coverage report to Coveralls
-- **lint** - Run tslint
-- **build** - Compile to JavaScript
+- `test` - *Run jest*
+- `test:cover` - *Run jest and create coverage report*
+- `coveralls` - *Publish coverage report to Coveralls*
+- `lint` - *Run tslint*
+- `build` - *Compile to JavaScript*
 
 ## Configuration
 

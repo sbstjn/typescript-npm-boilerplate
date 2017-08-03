@@ -13,7 +13,7 @@ A minimal boilerplate to write NPM modules in TypeScript. The TS code is compile
 - [Tests with Jest](test)
 - Coverage reports with [Coveralls](https://coveralls.io)
 - Test and build with [CircleCI](circle.yml)
-- Publish with GitHub [Releases](Releases)
+- Publish with [GitHub Releases](https://github.com/sbstjn/typescript-npm-boilerplate/releases)
 
 ## Usage
 

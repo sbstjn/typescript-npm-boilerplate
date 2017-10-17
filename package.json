@@ -17,7 +17,8 @@
     "test:cover": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "tslint {src,test}/**/*.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "prebuild": "rimraf ./dist"
   },
   "keywords": [
     "typescript",
@@ -25,7 +26,7 @@
     "boilerplate",
     "library"
   ],
-  "author": "Sebastian Müller",
+  "author": "Sebastian Müller <mail@sbstjn.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^20.0.5",
@@ -33,6 +34,7 @@
     "coveralls": "^2.13.1",
     "dot-json": "^1.0.3",
     "jest": "^20.0.4",
+    "rimraf": "^2.6.2",
     "ts-jest": "^20.0.7",
     "tslint": "^5.5.0",
     "typescript": "^2.4.2"

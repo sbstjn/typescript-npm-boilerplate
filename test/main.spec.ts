@@ -1,4 +1,4 @@
-import * as Library from '../src/main'
+import Library from '../src/main'
 
 describe('Constructor', () => {
   it('sets foo value', () => {

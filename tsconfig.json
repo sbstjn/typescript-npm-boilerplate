@@ -1,25 +1,34 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
     "module": "commonjs",
+    "target": "es5",
+    "sourceMap": false,
+    "allowJs": false,
     "moduleResolution": "node",
-    "noImplicitAny": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "outDir": "dist",
-    "sourceMap": true,
-    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "strict": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "esnext",
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es2015",
+      "es2016",
+      "dom"
+    ],
     "declaration": true
   },
   "include": [
-    "src/**/*",
-    "vendor/**/*"
+    "src/**/*"
   ],
   "exclude": [
-    "node_modules/**/*"
+    "node_modules/**/*",
+    "src/**/*.test.tsx",
+    "src/**/*.story.tsx",
+    "test/**/*"
   ]
 }

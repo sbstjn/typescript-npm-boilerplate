@@ -1,9 +1,7 @@
-class Library {
-  constructor(private foo: string) {
+export default class Library {
+  constructor(private foo: string) { }
 
-  }
-
-  public getFoo(): string {
+  public getFoo() {
     return this.foo
   }
 
@@ -11,5 +9,3 @@ class Library {
     this.foo = foo
   }
 }
-
-module.exports = Library

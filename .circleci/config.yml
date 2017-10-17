@@ -6,8 +6,8 @@ defaults: &defaults
 whitelist: &whitelist
   paths:
     - .npmignore
+    - coverage/*
     - dist/*
-    - node_modules/*
     - CODE_OF_CONDUCT.md
     - LICENSE.md
     - package.json
@@ -60,7 +60,22 @@ jobs:
 
       - run:
           name: Test TypeScript code
-          command: yarn test
+          command: yarn test:cover
+
+      - persist_to_workspace:
+          root: ~/repo
+          <<: *whitelist
+
+  coveralls:
+    <<: *defaults
+
+    steps:
+      - attach_workspace:
+          at: ~/repo
+
+      - run:
+          name: Submit coverage report to Coveralls.io
+          command: yarn coveralls
 
   build:
     <<: *defaults
@@ -112,6 +127,9 @@ workflows:
       - lint:
           requires:
             - checkout
+      - coveralls:
+          requires:
+            - test
       - build:
           requires:
             - test
@@ -141,6 +159,14 @@ workflows:
               ignore: /.*/
           requires:
             - checkout
+      - coveralls:
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
+            branches:
+              ignore: /.*/
+          requires:
+            - test
       - build:
           filters:
             tags:

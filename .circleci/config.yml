@@ -95,7 +95,7 @@ jobs:
           root: ~/repo
           <<: *whitelist
 
-  deploy-code:
+  deploy:
     <<: *defaults
 
     steps:

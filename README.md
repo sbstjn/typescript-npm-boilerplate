@@ -5,21 +5,19 @@
 [![license](https://img.shields.io/github/license/sbstjn/typescript-npm-boilerplate.svg)](https://github.com/sbstjn/typescript-npm-boilerplate/blob/master/LICENSE.md)
 [![Coveralls](https://img.shields.io/coveralls/sbstjn/typescript-npm-boilerplate.svg)](https://coveralls.io/github/sbstjn/typescript-npm-boilerplate)
 
-A minimal boilerplate to write NPM modules in TypeScript. The TS code is compiled to JavaScript and published to NPM using CircleCI and GitHub Releases.
+A basic boilerplate to write JavaScript NPM modules in TypeScript. The TypeScript code is compiled to JavaScript and published to NPM using CircleCI v2 Workflows and GitHub Releases.
 
 ## Features
 
 - [TypeScript](tsconfig.json) with [linting](tslint.json)
-- [Tests with Jest](test)
+- [Unit testing with Jest](test)
 - Coverage reports with [Coveralls](https://coveralls.io)
-- Test and build with [CircleCI](circle.yml)
+- Test and PR checks with [CircleCI](circle.yml)
 - Publish with [GitHub Releases](https://github.com/sbstjn/typescript-npm-boilerplate/releases)
 
 ## Usage
 
 Fork this repository, download it, or clone it and add your custom files and configurations.
-
-More to come …
 
 ### NPM Tasks
 
@@ -27,13 +25,16 @@ More to come …
 - `test:cover` - *Run jest and create coverage report*
 - `coveralls` - *Publish coverage report to Coveralls*
 - `lint` - *Run tslint*
-- `build` - *Compile to JavaScript*
+- `build` - *Build JavaScript files*
 
 ## Configuration
 
 ### CircleCI
 
-You need to configure two environment variables in CircleCI for publishing and coverage reports. First set `NPM_TOKEN` to a NPM token that allows publishing modules and configure the `COVERALLS_REPO_TOKEN` variable to submit coverage reports for your Coveralls project.
+You need to configure two environment variables in CircleCI, one for publishing to NPM and one for Coveralls coverage reports. 
+
+- `NPM_TOKEN` - NPM token that allows publishing
+- `COVERALLS_REPO_TOKEN` - The Coveralls token for your project
 
 ## License
 

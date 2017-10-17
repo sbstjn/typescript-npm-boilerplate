@@ -33,8 +33,8 @@ Fork this repository, download it, or clone it and add your custom files and con
 
 You need to configure two environment variables in CircleCI, one for publishing to NPM and one for Coveralls coverage reports. 
 
-- `NPM_TOKEN` - NPM token that allows publishing
-- `COVERALLS_REPO_TOKEN` - The Coveralls token for your project
+- `NPM_TOKEN`
+- `COVERALLS_REPO_TOKEN`
 
 ## License
 

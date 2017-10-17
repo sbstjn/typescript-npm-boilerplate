@@ -9,6 +9,8 @@ whitelist: &whitelist
     - coverage/*
     - dist/*
     - node_modules/*
+    - src/*
+    - test/*
     - CODE_OF_CONDUCT.md
     - LICENSE.md
     - package.json

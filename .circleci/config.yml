@@ -8,6 +8,7 @@ whitelist: &whitelist
     - .npmignore
     - coverage/*
     - dist/*
+    - node_modules/*
     - CODE_OF_CONDUCT.md
     - LICENSE.md
     - package.json

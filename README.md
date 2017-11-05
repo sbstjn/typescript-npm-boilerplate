@@ -7,6 +7,8 @@
 
 A basic boilerplate to write JavaScript NPM modules in TypeScript. The TypeScript code is compiled to JavaScript and published to NPM using CircleCI v2 Workflows and GitHub Releases.
 
+More details at: https://sbstjn.com/deploy-typescript-npm-with-circleci-workflows.html
+
 ## Features
 
 - [TypeScript](tsconfig.json) with [linting](tslint.json)
